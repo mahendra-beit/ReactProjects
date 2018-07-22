@@ -6,6 +6,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+	  <div >
+		This Div is Been click  times
+	  </div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
@@ -14,9 +17,10 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
 		<p className="App-intro">
-         <h3>Mahendra Prajapati</h3>
+         <h3 onClick = {this.props.onClick}>Mahendra Prajapati {this.props.clicks}</h3>
         </p>
       </div>
+	  
     );
   }
 }
